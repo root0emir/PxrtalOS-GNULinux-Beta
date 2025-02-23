@@ -16,3 +16,9 @@ At present, the future of this distribution is uncertain, and it is not expected
 ![Ekran Görüntüsü_20250218_233048](https://github.com/user-attachments/assets/0fddeaf1-c592-45ca-be9b-9e151e481712)
 ![Ekran Görüntüsü_20250223_203133](https://github.com/user-attachments/assets/3ec6bb20-0c43-4934-886b-b45911544008)
 ![Ekran Görüntüsü_20250223_203244](https://github.com/user-attachments/assets/3d0b620f-22ce-4ffd-8356-2f0ba2e5c9f5)
+
+----------------------
+Building stages of Pxrtal OS
+![Ekran Görüntüsü_20250223_211150](https://github.com/user-attachments/assets/6b727d43-cfdc-464a-8c06-bd92d0b6272e)
+![Ekran Görüntüsü_20250223_211208](https://github.com/user-attachments/assets/38da0b60-f683-4b63-bd6f-89bb171969d0)
+![Ekran Görüntüsü_20250223_211951](https://github.com/user-attachments/assets/92bbec97-4012-42fd-b790-9d0a9de443e9)
