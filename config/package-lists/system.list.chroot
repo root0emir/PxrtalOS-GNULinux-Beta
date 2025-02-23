@@ -33,13 +33,13 @@ network-manager-gnome
 python3-pip
 alsa-utils
 firmware-amd-graphics
-# nvidia-driver
-# nvidia-kernel-common
-# nvidia-kernel-dkms
-# nvidia-settings
-# nvidia-xconfig
-# nvidia-smi
-xserver-xorg-video-nouveau
+nvidia-driver
+nvidia-kernel-common
+nvidia-kernel-dkms
+nvidia-settings
+nvidia-xconfig
+nvidia-smi
+# xserver-xorg-video-nouveau
 xserver-xorg-video-intel
 firmware-linux-nonfree
 wireless-tools

@@ -1,11 +1,9 @@
 #!/bin/bash
+ma
+echo "installing"
 
-# Lshw ve smartctl araçlarını kurma
-echo "🔧 Lshw ve Smartctl araçları kuruluyor..."
-
-# Paketleri yükle
 apt-get update
 apt-get install -y lshw smartmontools
 
-# Yükleme tamamlandığında başarı mesajı ver
-echo "✅ Lshw ve Smartctl başarıyla kuruldu."
+
+echo "succes"
