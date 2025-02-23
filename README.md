@@ -6,3 +6,4 @@
 ![Ekran Görüntüsü_20250223_202820](https://github.com/user-attachments/assets/b6b8d64a-63d6-4e1c-8169-b4080f4cd8ed)
 ![Ekran Görüntüsü_20250218_233048](https://github.com/user-attachments/assets/0fddeaf1-c592-45ca-be9b-9e151e481712)
 ![Ekran Görüntüsü_20250223_203133](https://github.com/user-attachments/assets/3ec6bb20-0c43-4934-886b-b45911544008)
+![Ekran Görüntüsü_20250223_203244](https://github.com/user-attachments/assets/3d0b620f-22ce-4ffd-8356-2f0ba2e5c9f5)
