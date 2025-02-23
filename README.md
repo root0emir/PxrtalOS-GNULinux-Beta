@@ -1,5 +1,9 @@
 # PxrtalOS-GNU-Linux-Beta-rolling
-I'm announcing a Linux distribution  based on Debian (testing). Pxrtal OS is  its own AI, Software Market, System Manager and more.It also aims to facilitate use with automation scripts and special commands.
-![Pxrtal](https://github.com/user-attachments/assets/2ba746ec-cb36-42e1-8d6c-ee50aee68a23)
-![Ekran Görüntüsü_20250217_225803](https://github.com/user-attachments/assets/79560f83-bb1a-42cd-8828-883b6547b2cf)
-![Ekran Görüntüsü_20250217_225939](https://github.com/user-attachments/assets/e9b2973a-a18c-4271-ad02-bc951e8d158f)
+
+![Ekran Görüntüsü_20250223_202420](https://github.com/user-attachments/assets/28fadb3d-9487-4b88-8960-2e889868313b)
+![Ekran Görüntüsü_20250223_202455](https://github.com/user-attachments/assets/81cd71c5-1b74-408f-bb20-a7998346e06b)
+![Ekran Görüntüsü_20250223_202526](https://github.com/user-attachments/assets/e52f2f03-56c5-4315-8539-06fc8d36b9d7)
+![Ekran Görüntüsü_20250223_202820](https://github.com/user-attachments/assets/b6b8d64a-63d6-4e1c-8169-b4080f4cd8ed)
+![Ekran Görüntüsü_20250218_233048](https://github.com/user-attachments/assets/0fddeaf1-c592-45ca-be9b-9e151e481712)
+![Ekran Görüntüsü_20250223_203133](https://github.com/user-attachments/assets/3ec6bb20-0c43-4934-886b-b45911544008)
+![Ekran Görüntüsü_20250223_203244](https://github.com/user-attachments/assets/3d0b620f-22ce-4ffd-8356-2f0ba2e5c9f5)

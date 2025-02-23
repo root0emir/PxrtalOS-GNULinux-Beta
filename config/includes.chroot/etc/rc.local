@@ -1,6 +1,0 @@
-#!/bin/bash
-if [ -f /usr/bin/dconf ]; then
-    echo "dconf database settings"
-    sudo -u gdm dbus-launch dconf update
-fi
-exit 0
