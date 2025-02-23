@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Pxrtal AI 
+Comment=Pxrtal AI 
+Exec=/usr/local/bin/pxrtalai
+Icon=/usr/share/icons/pxrtal/128x128/apps/icon4.png
+Terminal=true
+Type=Application
+Categories=Utility;

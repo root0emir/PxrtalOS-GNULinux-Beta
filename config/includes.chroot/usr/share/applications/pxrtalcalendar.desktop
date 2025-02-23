@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Pxrtal Calendar
+Comment=Terminal calendar for  Pxrtal OS
+Exec=/usr/local/bin/pxrtalcalendar
+Icon=/usr/share/icons/pxrtal/128x128/apps/icon8.png
+Terminal=true
+Type=Application
+Categories=Utility;
+

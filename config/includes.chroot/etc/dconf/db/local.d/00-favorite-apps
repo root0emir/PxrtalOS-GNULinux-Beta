@@ -1,0 +1,2 @@
+[org/gnome/shell]
+favorite-apps = ['firefox-esr.desktop', 'nautilus.desktop', 'pxrtal.desktop', 'pxrtalai.desktop', 'org.gnome.Terminal.desktop', 'pxrtalmarket.desktop', 'pxrtalcalendar.desktop', 'pxrtalnotes.desktop']

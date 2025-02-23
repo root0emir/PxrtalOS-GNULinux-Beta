@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Usb Toolkit
+Comment=Usb Toolkit
+Exec=sh -c "/usr/local/bin/usbtoolkit; exec bash"
+Icon=/usr/share/icons/pxrtal/128x128/apps/icon3.png
+Terminal=true
+Type=Application
+Categories=Utility;

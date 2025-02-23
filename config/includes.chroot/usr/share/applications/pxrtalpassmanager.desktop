@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Pxrtal Password Manager
+Comment=Password manager  for Pxrtal OS
+Exec=/usr/local/bin/pxrtalpassmanager
+Icon=/usr/share/icons/pxrtal/128x128/apps/icon15.png
+Terminal=true
+Type=Application
+Categories=Utility;

@@ -1,0 +1,55 @@
+#!/bin/bash
+
+# PxrtalOS Commands Script
+# This script provides information about various PxrtalOS commands and automations
+
+echo "Welcome to PxrtalOS Commands and Automations Script"
+echo "Here is a list of available commands and their descriptions:"
+
+echo ""
+echo "System Information and Management:"
+echo "  about            - Provides information about PxrtalOS."
+echo "  kernelswitch     - Allows switching between different kernels."
+echo "  pxrtal           - Main command for PxrtalOS utilities and settings."
+echo "  help             - Displays help information for using PxrtalOS."
+echo "  donate           - Provides information on how to support PxrtalOS through donations."
+echo "  filemanagement   - Tools for managing files on your system."
+
+echo ""
+echo "Automation Commands:"
+echo "  autobackup       - Automates system backups at specified intervals."
+echo "  autosecurity     - Automates system security checks at specified intervals."
+echo "  autoupdate       - Automates system updates at specified intervals."
+
+echo ""
+echo "Learning and Assistance:"
+echo "  learnlinux       - Provides resources and tutorials for learning Linux."
+echo "  pxrtalai         - PxrtalOS integrated AI assistant for helping with tasks."
+
+echo ""
+echo "Network and Security:"
+echo "  netraffic        - Monitors network traffic and usage."
+echo "  symonitoring     - Monitors system performance and security."
+echo "  pxrtalsec        - PxrtalOS security tools and configurations."
+
+echo ""
+echo "Customization and Utilities:"
+echo "  pxrtalcalendar   - Calendar utility for managing events and schedules."
+echo "  setresolution    - Sets the display resolution."
+echo "  usbtoolkit       - Tools for managing USB devices."
+echo "  packageremover   - Utility for removing installed packages."
+echo "  pxrtalcommands   - Shows this list of PxrtalOS commands and automations."
+echo "  pxrtalcustomizer - Customizes the appearance and behavior of PxrtalOS."
+echo "  pxrtalmarket     - Accesses the PxrtalOS market for additional software and tools."
+
+echo ""
+echo "Specialized Tools:"
+echo "  nvidiadriver     - Installs and manages NVIDIA drivers."
+echo "  pxrtalnotes      - Note-taking application."
+echo "  pxrtalpassmanager - Password manager for securely storing credentials."
+echo "  usermanagement   - Tools for managing user accounts and permissions."
+
+echo ""
+echo "For more detailed information on any command, please refer to the PxrtalOS documentation or use the help command followed by the specific command name."
+
+echo "Thank you for using PxrtalOS!"

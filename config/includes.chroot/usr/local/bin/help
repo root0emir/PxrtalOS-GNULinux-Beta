@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# PxrtalOS Help Script
+# This script provides a summary of available PxrtalOS commands and their descriptions to assist users.
+
+echo "PxrtalOS Help Menu"
+echo "For now, there is nothing to see here. Pxrtal OS is currently a dormant distribution."
+echo "The developer is unsure about continuing. Who knows, maybe in the future Pxrtal OS will come back with a new ISO file and a ton of new features, or maybe it will be forgotten in the dusty pages of GitHub like hundreds of other distributions..."

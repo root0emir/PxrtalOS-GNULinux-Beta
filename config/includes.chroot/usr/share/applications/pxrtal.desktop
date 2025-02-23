@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Pxrtal System Manager
+Comment=System manager automation for Pxrtal OS
+Exec=sh -c "/usr/local/bin/pxrtal; exec bash"
+Icon=/usr/share/icons/pxrtal/128x128/apps/icon.png
+Terminal=true
+Type=Application
+Categories=Utility;

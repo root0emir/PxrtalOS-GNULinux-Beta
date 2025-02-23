@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# PxrtalOS About Script
+# This script provides information about PxrtalOS, highlighting its key features and benefits.
+
+echo "Welcome to PxrtalOS!"
+echo ""
+echo "For now, there is nothing to see here. Pxrtal OS is currently a dormant distribution."
+echo "The developer is unsure about continuing. Who knows, maybe in the future Pxrtal OS will come back with a new ISO file and a ton of new features, or maybe it will be forgotten in the dusty pages of GitHub like hundreds of other distributions..."

@@ -1,0 +1,45 @@
+gnome-shell
+gnome-tweaks
+gnome-session
+gnome-control-center
+gnome-terminal
+file-roller
+nano
+gnome-system-monitor
+gnome-calculator
+gnome-screenshot
+gnome-software
+gnome-settings-daemon
+gnome-screenshot
+x11-xserver-utils
+xorg
+gnome-shell-extensions
+gnome-shell-extension-manager
+firefox-esr
+python3
+mesa-vulkan-drivers
+mesa-utils
+nvidia-driver
+xserver-xorg-video-amdgpu
+memtest86+
+firmware-linux-free
+firmware-realtek
+firmware-atheros
+firmware-b43-installer
+firmware-brcm80211
+firmware-iwlwifi
+network-manager
+network-manager-gnome
+python3-pip
+alsa-utils
+firmware-amd-graphics
+# nvidia-driver
+# nvidia-kernel-common
+# nvidia-kernel-dkms
+# nvidia-settings
+# nvidia-xconfig
+# nvidia-smi
+xserver-xorg-video-nouveau
+xserver-xorg-video-intel
+firmware-linux-nonfree
+wireless-tools

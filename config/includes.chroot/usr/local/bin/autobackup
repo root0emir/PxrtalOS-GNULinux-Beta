@@ -1,0 +1,79 @@
+#!/bin/bash
+
+# This script creates a backup of the system at a specified time and interval
+
+# Backup destination directory
+BACKUP_DIR="/path/to/backup/directory"
+
+# Function to check for root privileges
+check_root() {
+  if [ "$EUID" -ne 0 ]; then
+    echo "Please run as root"
+    exit 1
+  fi
+}
+
+# Function to create a backup
+create_backup() {
+  echo "Creating backup..."
+  TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
+  BACKUP_FILE="$BACKUP_DIR/backup_$TIMESTAMP.tar.gz"
+  tar -czvf "$BACKUP_FILE" --exclude="$BACKUP_DIR" /
+  echo "Backup created at $BACKUP_FILE"
+}
+
+# Function to schedule the backup
+schedule_backup() {
+  local hour="$1"
+  local minute="$2"
+  local interval="$3"
+
+  # Create a cron job
+  (crontab -l 2>/dev/null; echo "$minute $hour */$interval * * /path/to/backup_script.sh create_backup") | crontab -
+  echo "Backup scheduled at $hour:$minute every $interval days."
+}
+
+# Function to get user input
+get_user_input() {
+  read -p "Enter the hour (0-23) for the backup: " hour
+  read -p "Enter the minute (0-59) for the backup: " minute
+  read -p "Enter the interval in days for the backup: " interval
+
+  if [[ ! "$hour" =~ ^[0-9]+$ ]] || [ "$hour" -lt 0 ] || [ "$hour" -gt 23 ]; then
+    echo "Invalid hour. Please enter a value between 0 and 23."
+    exit 1
+  fi
+
+  if [[ ! "$minute" =~ ^[0-9]+$ ]] || [ "$minute" -lt 0 ] || [ "$minute" -gt 59 ]; then
+    echo "Invalid minute. Please enter a value between 0 and 59."
+    exit 1
+  fi
+
+  if [[ ! "$interval" =~ ^[0-9]+$ ]] || [ "$interval" -lt 1 ]; then
+    echo "Invalid interval. Please enter a positive integer."
+    exit 1
+  fi
+
+  schedule_backup "$hour" "$minute" "$interval"
+}
+
+# Function to display usage
+usage() {
+  echo "Usage: $0 [create_backup]"
+  echo "If no arguments are specified, it will prompt to schedule a backup."
+  echo "If 'create_backup' is specified, it will create a backup immediately."
+}
+
+# Main function
+main() {
+  check_root
+
+  if [ "$1" == "create_backup" ]; then
+    create_backup
+  else
+    get_user_input
+  fi
+}
+
+# Run the main function
+main "$@"

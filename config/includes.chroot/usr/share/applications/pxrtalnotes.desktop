@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Pxrtal Notes
+Comment=Note app for Pxrtal OS
+Exec=/usr/local/bin/pxrtalnotes
+Icon=/usr/share/icons/pxrtal/128x128/apps/icon2.png
+Terminal=true
+Type=Application
+Categories=Utility;

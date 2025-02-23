@@ -1,0 +1,58 @@
+#!/bin/bash
+
+# This script installs NVIDIA drivers on a Debian-based system
+
+# Function to check for root privileges
+check_root() {
+  if [ "$EUID" -ne 0 ]; then
+    echo "Please run as root"
+    exit 1
+  fi
+}
+
+# Function to update the system
+update_system() {
+  echo "Updating the system..."
+  apt-get update && apt-get upgrade -y
+}
+
+# Function to install necessary dependencies
+install_dependencies() {
+  echo "Installing necessary dependencies..."
+  apt-get install -y build-essential dkms
+}
+
+# Function to add the NVIDIA repository
+add_nvidia_repo() {
+  echo "Adding the NVIDIA repository..."
+  apt-get install -y software-properties-common
+  add-apt-repository contrib
+  add-apt-repository non-free
+  add-apt-repository ppa:graphics-drivers/ppa
+  apt-get update
+}
+
+# Function to install NVIDIA drivers
+install_nvidia_drivers() {
+  echo "Installing NVIDIA drivers..."
+  apt-get install -y nvidia-driver
+}
+
+# Function to reboot the system
+reboot_system() {
+  echo "Rebooting the system to apply changes..."
+  reboot
+}
+
+# Main function
+main() {
+  check_root
+  update_system
+  install_dependencies
+  add_nvidia_repo
+  install_nvidia_drivers
+  reboot_system
+}
+
+# Run the main function
+main

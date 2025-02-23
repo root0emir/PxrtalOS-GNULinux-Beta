@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Pxrtal Security Scanner
+Comment=Security scanner for Pxrtal OS
+Exec=/usr/local/bin/pxrtalsec
+Icon=/usr/share/icons/pxrtal/128x128/apps/icon14.png
+Terminal=true
+Type=Application
+Categories=Utility;

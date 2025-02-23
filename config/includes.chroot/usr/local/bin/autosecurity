@@ -1,0 +1,90 @@
+#!/bin/bash
+
+# This script performs a security scan of the system at a specified time and interval
+
+# Function to check for root privileges
+check_root() {
+  if [ "$EUID" -ne 0 ]; then
+    echo "Please run as root"
+    exit 1
+  fi
+}
+
+# Function to install necessary tools
+install_tools() {
+  echo "Installing necessary security tools..."
+  apt-get update
+  apt-get install -y clamav clamav-daemon chkrootkit rkhunter
+}
+
+# Function to update the virus database
+update_virus_database() {
+  echo "Updating virus database..."
+  freshclam
+}
+
+# Function to perform the security scan
+perform_scan() {
+  echo "Performing security scan..."
+  clamscan -r / --exclude-dir="^/sys" --exclude-dir="^/proc" --exclude-dir="^/dev" --exclude-dir="^/run"
+  chkrootkit
+  rkhunter --check
+}
+
+# Function to schedule the security scan
+schedule_scan() {
+  local hour="$1"
+  local minute="$2"
+  local interval="$3"
+
+  # Create a cron job
+  (crontab -l 2>/dev/null; echo "$minute $hour */$interval * * /path/to/security_scan_script.sh perform_scan") | crontab -
+  echo "Security scan scheduled at $hour:$minute every $interval days."
+}
+
+# Function to get user input
+get_user_input() {
+  read -p "Enter the hour (0-23) for the security scan: " hour
+  read -p "Enter the minute (0-59) for the security scan: " minute
+  read -p "Enter the interval in days for the security scan: " interval
+
+  if [[ ! "$hour" =~ ^[0-9]+$ ]] || [ "$hour" -lt 0 ] || [ "$hour" -gt 23 ]; then
+    echo "Invalid hour. Please enter a value between 0 and 23."
+    exit 1
+  fi
+
+  if [[ ! "$minute" =~ ^[0-9]+$ ]] || [ "$minute" -lt 0 ] || [ "$minute" -gt 59 ]; then
+    echo "Invalid minute. Please enter a value between 0 and 59."
+    exit 1
+  fi
+
+  if [[ ! "$interval" =~ ^[0-9]+$ ]] || [ "$interval" -lt 1 ]; then
+    echo "Invalid interval. Please enter a positive integer."
+    exit 1
+  fi
+
+  schedule_scan "$hour" "$minute" "$interval"
+}
+
+# Function to display usage
+usage() {
+  echo "Usage: $0 [perform_scan]"
+  echo "If no arguments are specified, it will prompt to schedule a security scan."
+  echo "If 'perform_scan' is specified, it will perform a security scan immediately."
+}
+
+# Main function
+main() {
+  check_root
+  install_tools
+  update_virus_database
+
+  if [ "$1" == "perform_scan" ]; then
+    perform_scan
+  else
+    get_user_input
+  fi
+}
+
+# Run the main function
+main "$@"

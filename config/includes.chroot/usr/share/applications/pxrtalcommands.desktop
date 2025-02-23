@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Pxrtal Commands
+Comment=Commands and automations for Pxrtal OS
+Exec=sh -c "/usr/local/bin/pxrtalcommands; exec bash"
+Icon=/usr/share/icons/pxrtal/128x128/apps/icon16.png
+Terminal=true
+Type=Application
+Categories=Utility;

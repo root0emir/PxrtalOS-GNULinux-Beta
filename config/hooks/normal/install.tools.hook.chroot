@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+# Pip'in sistem paketlerini bozmasına izin vererek yükleme yapacak
+pip install --break-system-packages requests termcolor pygame cryptography pyfiglet
+

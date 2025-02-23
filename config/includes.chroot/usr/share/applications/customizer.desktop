@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Pxrtal Customizer
+Comment=Customizer tool for Pxrtal OS
+Exec=/usr/local/bin/pxrtalcustomizer
+Icon=/usr/share/icons/pxrtal/128x128/apps/icon10.png
+Terminal=true
+Type=Application
+Categories=Utility;
